@@ -1,9 +1,9 @@
 ## 🎉 Project Overview
-My personal portfolio website built using Next.js, Tailwind CSS and Framer-motion.
+Personal portfolio website of Yusuf Bahrudin Nizar, showcasing projects and experience as a Fullstack Developer. Built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## 📍 Live 
 
-Link to the live version: [https://michalskolak.vercel.app](https://michalskolak.vercel.app)
+Link to the live version: [https://yusufportofolio.vercel.app](https://yusufportofolio.vercel.app)
 
 ## 💾 Installation 
 Download the project to your computer and install needed packages with command:
@@ -33,4 +33,4 @@ and open http://localhost:3000 to see this app.
 - React-hook-form
 - Resend
 
-If you encounter a problem, write to this e-mail address: [skolakmichal1@gmail.com](mailto:skolakmichal1@gmail.com)
+If you encounter a problem, write to this e-mail address: [yusufbahrudin97@gmail.com](mailto:yusufbahrudin97@gmail.com)
