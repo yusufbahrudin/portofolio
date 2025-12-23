@@ -3,7 +3,6 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { toast } from 'sonner';
 
 import { sendEmailAction } from '@/actions/send-email';
@@ -55,21 +54,7 @@ export const Contact = () => {
     >
       <SectionHeading
         heading="Get In Touch"
-        content={
-          <>
-            Please contact me directly at{' '}
-            <Button
-              variant="link"
-              className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
-              asChild
-            >
-              <Link href="mailto:skolakmichal1@gmail.com">
-                skolakmichal1@gmail.com
-              </Link>
-            </Button>{' '}
-            or through this form.
-          </>
-        }
+        content="Feel free to reach out by filling out the form below. I'll get back to you as soon as possible!"
       />
       <form
         onSubmit={handleSubmit(onSubmit)}

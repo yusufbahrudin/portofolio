@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion';
 
+import { projectsData } from '../lib/data';
+
 import { Project } from '@/components/project';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
-import { projectsData } from '@/lib/data';
 
 export const Projects = () => {
   const { ref } = useSectionInView('Projects');

@@ -3,14 +3,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { experiencesData } from '../lib/data';
+
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
-import { experiencesData } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
+type ExperienceItem = (typeof experiencesData)[number];
+
 export const Experience = () => {
-  const { ref: sectionRef } = useSectionInView('Experience');
+  const { ref: sectionRef } = useSectionInView('Experience', 0.3);
 
   return (
     <section
@@ -24,7 +27,13 @@ export const Experience = () => {
       />
       <div className="relative max-w-screen-md">
         {experiencesData.map(
-          ({ title, description, company, period, technologies }) => (
+          ({
+            title,
+            description,
+            company,
+            period,
+            technologies,
+          }: ExperienceItem) => (
             <div
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
@@ -61,7 +70,7 @@ export const Experience = () => {
                 </div>
                 <p className="text-muted-foreground">{description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {technologies.map((tech) => (
+                  {technologies.map((tech: string) => (
                     <div
                       key={tech}
                       className="rounded-full border px-3 py-1 text-sm "

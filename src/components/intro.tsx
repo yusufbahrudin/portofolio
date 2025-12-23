@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/button';
@@ -20,8 +21,32 @@ export const Intro = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
+          type: 'spring',
+          stiffness: 125,
+          damping: 10,
+          duration: 0.3,
+        }}
+        className="relative"
+      >
+        <div className="absolute -inset-0.5 animate-pulse rounded-full bg-gradient-to-r from-pink-600 to-purple-600 opacity-75 blur-lg"></div>
+        <Image
+          src="/images/profile.png"
+          alt="Profile"
+          width={192}
+          height={192}
+          quality={95}
+          priority
+          className="relative size-36 rounded-full border-4 border-white object-cover shadow-2xl ring-4 ring-gray-200 transition-transform hover:scale-105 sm:size-44 dark:border-gray-950 dark:ring-gray-800"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
           type: 'tween',
           duration: 0.2,
+          delay: 0.1,
         }}
       >
         <Link
@@ -40,11 +65,10 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        Hi I&#39;m a{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Frontend
+          Fullstack
         </span>{' '}
-        developer creating modern web apps.
+        Developer
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
@@ -54,8 +78,10 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        A frontend developer based in the Poland. I&#39;m passionate about
-        building modern web applications using Next.js, React, and Tailwind CSS.
+        A Fullstack Developer with experience building modern, scalable web
+        applications using Next.js, React, TypeScript, and Tailwind CSS. I have
+        hands-on experience developing CRUD-based applications and delivering
+        real-world web and mobile projects.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -70,14 +96,9 @@ export const Intro = () => {
             Get in touch <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
-        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
-          <a href="/michalskolak.pdf" download>
-            Download CV <Icons.download className="ml-2 size-4" />
-          </a>
-        </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
-            href="https://www.linkedin.com/in/micha%C5%82-skolak-06905524b"
+            href="https://www.linkedin.com/in/yusuf-bahrudin-nizar-a43342152/"
             aria-label="Linkedin"
             target="_blank"
           >
@@ -86,7 +107,7 @@ export const Intro = () => {
         </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
-            href="https://github.com/Skolaczk"
+            href="https://github.com/yusufbahrudin"
             aria-label="Github"
             target="_blank"
           >

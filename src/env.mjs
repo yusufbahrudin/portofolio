@@ -12,4 +12,6 @@ export const env = createEnv({
     GOOGLE_SITE_VERIFICATION_ID: process.env.GOOGLE_SITE_VERIFICATION_ID,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
   },
+  skipValidation: !!process.env.SKIP_ENV_VALIDATION,
+  emptyStringAsUndefined: true,
 });

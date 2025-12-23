@@ -1,17 +1,18 @@
 import { env } from '@/env.mjs';
 
 export const siteConfig = {
-  title: 'Michał Skolak | Front-end developer',
+  title: 'Yusuf Bahrudin Nizar | Fullstack Developer',
   description:
-    "Hello, I'm Michał. I am front-end developer from Poland. I enjoy building sites and apps. My focus is React (Next.js).",
+    "Hello, I'm Yusuf Bahrudin Nizar. I am a Fullstack Developer. I enjoy building modern web applications with React, Next.js, TypeScript, and Node.js.",
   keywords: [
-    'Michał Skolak',
-    'Front-end developer',
-    'Poland',
+    'Yusuf Bahrudin Nizar',
+    'Fullstack Developer',
+    'Indonesia',
     'React',
     'Next.js',
     'Web development',
-    'Front-end',
+    'Frontend',
+    'Backend',
     'UI/UX',
     'Responsive design',
     'JavaScript',

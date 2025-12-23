@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 
-import { skillsData } from '@/lib/data';
+import type { skillsData } from '../lib/data';
+import { skillsData as skills } from '../lib/data';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,8 +21,8 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
   return (
-    <div className="mt-10 flex w-full flex-wrap justify-between gap-10 px-5 sm:justify-center sm:px-0 md:mt-14 lg:justify-between">
-      {skillsData.map(({ icon }, index) => (
+    <div className="mt-10 grid w-full grid-cols-4 gap-8 px-5 sm:grid-cols-6 sm:px-0 md:mt-14 md:grid-cols-7 lg:grid-cols-8">
+      {skills.map((skill: (typeof skillsData)[number], index: number) => (
         <motion.div
           key={index}
           variants={fadeInAnimationVariants}
@@ -31,8 +32,9 @@ export const Skills = () => {
             once: true,
           }}
           custom={index}
+          className="flex items-center justify-center"
         >
-          {icon}
+          {skill.icon}
         </motion.div>
       ))}
     </div>

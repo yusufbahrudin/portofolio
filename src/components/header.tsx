@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+import { links } from '../lib/data';
+
 import { useActiveSection } from '@/components/active-section-provider';
 import { Button } from '@/components/button';
 import {
@@ -15,7 +17,6 @@ import {
 } from '@/components/dialog';
 import { Icons } from '@/components/icons';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { links } from '@/lib/data';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

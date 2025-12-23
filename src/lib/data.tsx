@@ -1,8 +1,4 @@
-import Link from 'next/link';
-
-import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { cn } from '@/lib/utils';
 
 export const links = [
   {
@@ -29,80 +25,124 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
-    title: 'Next-starter',
+    image: '/images/deeptalk.webp',
+    title: 'DeepTalk - Mental Health App',
     description:
-      'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
-    technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
+      'A comprehensive mental health application connecting users with professional psychologists. Available on web, iOS, and Android platforms with separate apps for users and psychologist partners.',
+    technologies: [
+      'React Native',
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'MongoDB',
+      'Firebase',
+      'AWS',
+      'MySQL',
+      'Microservices',
+      'RabbitMQ',
+      'GraphQL',
+      'Redis',
+    ],
     links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
+      preview: 'https://www.deeptalk.co.id/',
+      playstoreUser:
+        'https://play.google.com/store/apps/details?id=com.deeptalkindonesia.app',
+      playstorePsikolog:
+        'https://play.google.com/store/apps/details?id=com.deeptalk.mitrapsikolog',
+      appstoreUser:
+        'https://apps.apple.com/id/app/deeptalk-mental-health-app/id6745482376?l=id',
+      appstorePsikolog:
+        'https://apps.apple.com/my/app/psikolog-deeptalk/id6745827673?l=ms',
     },
   },
   {
-    image: '/images/project-1.webp',
-    title: 'SocialHub',
+    image: '/images/logosinstitute.webp',
+    title: 'Logos Institute',
     description:
-      'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
+      'Online marketplace platform for psychology, HR, and mental health courses. Provides comprehensive learning resources and professional development programs.',
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Node.js',
+      'PostgreSQL',
+      'Prisma',
+      'Microservices',
+      'AWS',
+      'GraphQL',
+      'Redis',
+    ],
     links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
+      preview: 'https://www.logosinstitute.id/',
     },
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Web developer intern',
-    company: 'WEB-BOX, Tarnobrzeg PL',
+    title: 'Fullstack Developer',
+    company: 'PT Logos Indonesia Mandiri, Jakarta',
     description:
-      'During this internship, I focused on two key areas: creating Wordpress plugins and managing website content, plugins, and settings.',
-    period: '2023',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
+      'Developed psychology websites and assessment services as main focus. Collaborated closely with CEO and product owners to lead development of advanced applications tailored to company needs. Actively participated in development of DeepTalk mobile applications, creating meaningful and impactful digital experiences for users.',
+    period: 'Jan 2024 – Aug 2025',
+    technologies: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'MongoDB',
+      'React Native',
+      'AWS',
+      'MySQL',
+      'Microservices',
+      'RabbitMQ',
+      'Firebase',
+      'GraphQL',
+      'Figma',
+    ],
   },
   {
-    title: 'Frontend developer & UI designer',
-    company: 'Freelancing, remote',
+    title: 'Fullstack Developer Bootcamp',
+    company: 'Hacktiv8, Jakarta',
     description:
-      'As a freelancer, I specialized in graphic design using Figma and website development using Next.js with Sanity CMS. I undertook projects independently, from design conceptualization to final implementation, ensuring client satisfaction.',
-    period: '2023 - 2024',
-    technologies: ['Next.js', 'TypeScript', 'Sanity CMS', 'Tailwind'],
+      'Undertook an intensive Immersive JavaScript Full Stack program, refining skills in software development. Contributed to various projects demonstrating proficiency in both front-end and back-end technologies, including developing applications like Detik News Portal clone and HMDB Movies platform.',
+    period: 'June – October 2023',
+    technologies: [
+      'JavaScript',
+      'React',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'AWS',
+      'Microservices',
+      'Vue.js',
+      'Docker',
+      'AJAX',
+    ],
   },
   {
-    title: 'Frontend developer intern',
-    company: 'Chop-chop, remote',
+    title: 'Warehouse Officer',
+    company: 'PT. Enseval Putera Megatrading Tbk, Surabaya',
     description:
-      'During my internship at Chop-Chop, I collaborated with an experienced IT team, focusing on tasks in Next.js. This experience provided valuable insights into teamwork and advanced my proficiency in Next.js.',
-    period: '2024',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
+      'Effectively utilized Oracle Applications to manage and optimize warehouse operations including inventory tracking, order processing, and maintaining accurate records. Implemented best practices to maintain high levels of inventory accuracy and ensure efficient warehouse operations.',
+    period: 'October 2021 – June 2023',
+    technologies: ['Oracle Applications', 'Inventory Management', 'SAP'],
   },
   {
-    title: 'Frontend developer & UI designer',
-    company: 'GeoScan, remote',
-    description: (
-      <>
-        At GeoScan, I collaborate with frontend, backend, and GIS specialists to
-        build{' '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://geoscan-app.com"
-          target="_blank"
-        >
-          geoscan-app.com
-        </Link>{' '}
-        — a platform for generating real estate reports. I’m responsible for
-        developing and maintaining the frontend, as well as designing UI/UX to
-        ensure a clear and intuitive user experience.
-      </>
-    ),
-    period: '2024 - present',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Leaflet'],
+    title: 'Risk Management (Internship)',
+    company: 'PT. Angkasa Pura 1 (Persero), Surabaya',
+    description:
+      'Actively involved in the identification and analysis of information threats within the ICT department, with a focus on baggage services. Developed expertise in ISO 27001 and ISO 27005 standards, contributing to the development and implementation of robust information security management systems.',
+    period: 'June 2020 – June 2021',
+    technologies: ['ISO 27001', 'ISO 27005', 'Risk Management', 'ICT Security'],
+  },
+  {
+    title: 'Web Developer (Internship)',
+    company: 'PT. Stars International Shoes, Surabaya',
+    description:
+      'Developed a web-based store search and logistics tracking system to streamline operations and improve efficiency.',
+    period: 'June 2018 – May 2019',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
   },
 ] as const;
 
@@ -115,8 +155,19 @@ export const skillsData = [
   { icon: <Icons.typescript className="size-12" /> },
   { icon: <Icons.react className="size-12" /> },
   { icon: <Icons.redux className="size-12" /> },
+  { icon: <Icons.vue className="size-12" /> },
   { icon: <Icons.nextjs className="size-12" /> },
   { icon: <Icons.nestjs className="size-12" /> },
+  { icon: <Icons.express className="size-12" /> },
   { icon: <Icons.prisma className="size-12" /> },
   { icon: <Icons.docker className="size-12" /> },
+  { icon: <Icons.aws className="size-12" /> },
+  { icon: <Icons.microservices className="size-12" /> },
+  { icon: <Icons.rabbitmq className="size-12" /> },
+  { icon: <Icons.postgresql className="size-12" /> },
+  { icon: <Icons.mysql className="size-12" /> },
+  { icon: <Icons.mongodb className="size-12" /> },
+  { icon: <Icons.firebase className="size-12" /> },
+  { icon: <Icons.graphql className="size-12" /> },
+  { icon: <Icons.reactnative className="size-12" /> },
 ] as const;
